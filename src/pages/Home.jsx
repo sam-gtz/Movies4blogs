@@ -1,5 +1,6 @@
 import MovieCard from "../components/MovieCard"
 import { useState } from "react"
+import "../css/Home.css"
 
 function Home() {
 
@@ -32,7 +33,7 @@ function Home() {
             </form>
         </div>
         <div className="movies-grid">
-            { movies.map((m) => (
+            { movies.map( (m) => (
                 <MovieCard movie={m} key={m.id} /> 
             ))}
         </div>
